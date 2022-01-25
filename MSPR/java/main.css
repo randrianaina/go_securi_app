@@ -1,0 +1,33 @@
+
+input {
+    margin-left:20px;
+  }
+.hello{
+    
+    width:25%;
+    text-align: right;
+    position: fixed;
+    top: 70%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+img{
+    float: right;
+    width: 22%;
+    height: 30%;
+}
+.iden{
+    width: 110px;
+    padding : 10px;
+    margin:30px;
+    border: 1px solid;
+    text-align: center;
+}
+.agents li{
+    margin: 10px;
+    padding: 5px;
+}
