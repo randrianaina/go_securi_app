@@ -8,7 +8,7 @@ import java.text.Collator;
 public class index {static String[] args2;
     public static void main(String[] args) throws IOException {
 
-       
+
 
         var path = Paths.get("MSPR/java", "staff.txt");
         FileReader fr = new FileReader(path.toString());
@@ -36,7 +36,7 @@ public class index {static String[] args2;
         sb.append("<ul>");
         for(int i = 0; i < lines.size(); i++) {
             sb.append("<li><a href='");
-            Mspr.main(args2,lines.get(i),i);
+            Mspr.generateHtml(args2,lines.get(i),i);
             sb.append("test"+i+".html'>"+ lines.get(i) +"</a></li>");
         }
         sb.append("</ul>");
@@ -46,7 +46,7 @@ public class index {static String[] args2;
         bw.write(sb.toString());
         bw.close();
         sc.close();
-         
+
 
     }
 }

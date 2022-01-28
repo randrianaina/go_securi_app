@@ -7,7 +7,7 @@ import java.nio.file.Paths;
 public class Mspr{
 
 
-    public static void main(String[] args2,String str,int j) throws IOException {
+    public static void generateHtml(String[] args2,String str,int j) throws IOException {
 
         var path = Paths.get("MSPR/java", "liste.txt");
         FileReader fr = new FileReader(path.toString());
@@ -35,14 +35,14 @@ public class Mspr{
             {
                 if(line.charAt(i) == Character.toUpperCase(line.charAt(i)))
                 {
-                    
+
                     ch=line.substring(i+4,line.length());
                     sb.append("<label>"+ch+"</label> ");
                     sb.append("<input type='checkbox'checked><br><br>");
                     break;
                 }
             }
-                
+
         }
         sb.append("</div>");
         sb.append("</body>");
@@ -50,7 +50,7 @@ public class Mspr{
         bw.write(sb.toString());
         bw.close();
         sc.close();
-        
+
 
     }
 }
