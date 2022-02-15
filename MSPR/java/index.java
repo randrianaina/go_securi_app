@@ -10,7 +10,7 @@ public class index {static String[] args2;
 
 
 
-        var path = Paths.get("MSPR/java", "staff.txt");
+        var path = Paths.get("MSPR/java/database", "staff.txt");
         FileReader fr = new FileReader(path.toString());
         BufferedReader br = new BufferedReader(fr);
         Scanner sc = new Scanner(fr);
