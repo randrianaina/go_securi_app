@@ -9,7 +9,7 @@ public class Mspr{
 
     public static void generateHtml(String[] args2,String str,int j) throws IOException {
 
-        var path = Paths.get("MSPR/java/database", "liste.txt");
+        var path = Paths.get("C:/ProgramData/Jenkins/.jenkins/workspace/Get Txt files/database", "liste.txt");
         FileReader fr = new FileReader(path.toString());
         Scanner sc = new Scanner(fr);
         StringBuilder sb = new StringBuilder();
